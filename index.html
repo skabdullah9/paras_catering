@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 bg-white bg-opacity-95 text-gray-600 body-font shadow-2xl">
+    <div class="desktop hidden md:flex container mx-auto flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-600 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl font-serif">Paras Catering</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
+        <a href="#hero"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Home</a>
+        <a href="#services"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Services</a>
+        <a
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">About
+          Us</a>
+        <a
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Gallery</a>
+        <a
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Testimonial</a>
+        <a
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Contact
+          Us</a>
+      </nav>
+      <a href="tel:+919985362644"
+        class="text-white font-serif bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"> Call Now
+        <i class="fas fa-phone-alt"></i>
+      </a>
+    </div>
+    <div class="mobile block md:hidden container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-600 rounded-full"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl font-serif">Paras Catering</span>
+      </a>
+      <nav class="hidden md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
+        <a href="#hero"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Home</a>
+        <a href="#services"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Services</a>
+        <a href="#about-us"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">About
+          Us</a>
+        <a href="#gallery"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Gallery</a>
+        <a href="#testimonial"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Testimonial</a>
+        <a href="#contact"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Contact
+          Us</a>
+      </nav>
+      <a href="tel:+919985362644"
+        class="hidden text-white font-serif bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6">
+        Call Now <i class="fas fa-phone-alt"></i>
+      </a>
+    </div>
+  </header>
+  <main class="divide">
+    <section id="hero" class="hero overflow-hidden">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide text-center text-gray-100 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            style="background-image: url('./assets/img/slide_1.webp');">
+            <div class="">
+              <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
+              <p class="text-xl md:text-3xl text-gray-300 font-sans capitalize mt-2 mb-6">for all your events</p>
+              <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Hello there!" target="_blank"
+                class="text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-8"><i
+                  class="fab fa-whatsapp"></i> Enquire Now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            style="background-image: url('./assets/img/slide_2.webp');">
+            <div>
+              <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
+              <p class="text-xl md:text-3xl text-gray-700 font-sans capitalize mt-2 mb-6">for all your events</p>
+              <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Hello there!" target="_blank"
+                class="text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"><i
+                  class="fab fa-whatsapp"></i> Enquire Now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            style="background-image: url('./assets/img/slide_3.webp');">
+            <div>
+              <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
+              <p class="text-xl md:text-3xl text-gray-700 font-sans capitalize mt-2 mb-6">for all your events</p>
+              <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Hello there!" target="_blank"
+                class="text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"><i
+                  class="fab fa-whatsapp"></i> Enquire Now</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            style="background-image: url('./assets/img/slide_4.webp');">
+            <div>
+              <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
+              <p class="text-xl md:text-3xl text-gray-700 font-sans capitalize mt-2 mb-6">for all your events</p>
+              <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Hello there!" target="_blank"
+                class="text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"><i
+                  class="fab fa-whatsapp"></i> Enquire Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="services" class="services my-12">
+      <div class="container mx-auto">
+        <h1 class="text-3xl mb-10 text-center md:text-4xl uppercase ">services</h1>
+        <div class="grid gap-y-8 justify-between grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="text-center">
+            <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
+                src="./assets/img/services_1.jpg"
+                class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
+                alt=""></div>
+            <h4 class="text-2xl my-3">Weddings</h4>
+            <p class="max-w-xs text-center mx-auto mb-4 px-4 overflow-ellipsis">We make sure to make your wedding more
+              memorable by serving the best food to you and your guests.</p>
+            <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Wedding" target="_blank"
+              class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
+                class="fab fa-whatsapp"></i> Book Now</a>
+          </div>
+          <div class="text-center">
+            <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
+                src="./assets/img/services_2.webp"
+                class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
+                alt=""></div>
+            <h4 class="text-2xl my-3">Corporate Events</h4>
+            <p class="max-w-xs text-center mx-auto mb-4 px-4 overflow-ellipsis">Make your next event a success. We serve
+              the right kind of delicacies keeping in mind your guest profile.</p>
+            <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Corporate Events" target="_blank"
+              class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
+                class="fab fa-whatsapp"></i> Book Now</a>
+          </div>
+          <div class="text-center">
+            <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
+                src="./assets/img/services_3.webp"
+                class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
+                alt=""></div>
+            <h4 class="text-2xl my-3">Private Events</h4>
+            <p class="max-w-xs text-center mx-auto mb-4 px-4 overflow-ellipsis">We ensure that the event is made
+              memorable according to the theme of the event.</p>
+            <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Private Events" target="_blank"
+              class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
+                class="fab fa-whatsapp"></i> Book Now</a>
+          </div>
+          <div class="text-center">
+            <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
+                src="./assets/img/services_4.webp"
+                class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
+                alt=""></div>
+            <h4 class="text-2xl my-3">Birthday Parties</h4>
+            <p class="max-w-xs text-center mx-auto mb-4 px-4 overflow-ellipsis">Our team is committed to making your
+              events run smoothly by providing delicious food.</p>
+            <a href="https://api.whatsapp.com/send?phone=+919985362644&text=Birthday Parties" target="_blank"
+              class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
+                class="fab fa-whatsapp"></i> Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="about-us my-18 md:my-28">
+      <div class="container mx-auto">
+        <div class="flex flex-col-reverse md:flex-row">
+          <div class="flex-1 flex flex-col justify-center items-center text-center">
+            <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase ">about us</h1>
+            <p class="max-w-prose p-5">Filling every occasion with great food and service. We Paras Catering, situated at Saidabad, Hyderabad, Telangana are known for providing truly exquisite cuisine accompanied by dedicated service. We give our customers the option of choosing from a packaged catering menu or a customized menu. We deliver world class dining experience and to suit everyone's taste, we offer a wide range of cuisines with a menu boasting of many delicacies across global cuisines.</p>
+          </div>
+          <div class="flex-1 md:rounded-2xl max-h-96 overflow-hidden"><img src="./assets/img/about-us.jpg" class="h-full w-full object-cover object-center" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container mx-auto">
+          <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">gallery</h1>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-us mb-16">
+      <div class="container mx-auto">
+        <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">contact us</h1>
+        <div class="flex flex-col md:flex-row mx-auto max-w-7xl gap-6">
+          <div class="info flex-1 bg-gray-50 shadow-xl pl-0 md:pl-28 py-8 md:py-14 rounded-xl mx-4">
+            <div class="address flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+              <i class="fas fa-map-marker-alt text-pink-500 text-3xl pl-1"></i>
+              <div>
+                <p class="text-xl font-normal">Our Office Address</p>
+                <small class="text-sm text-gray-600">Saidabad, Hyderabad, Telangana. 500059</small>
+              </div>
+            </div>
+            <div class="email flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+              <i class="fas fa-envelope text-pink-500 text-3xl"></i>
+              <div>
+                <p class="text-xl font-normal">General Enquiries</p>
+                <small class="text-sm text-gray-600"> <a href="mailto:"></a> contact@mysites.com</small>
+              </div>
+            </div>
+            <div class="call flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+              <i class="fas fa-phone-alt text-pink-500 text-3xl transform rotate-90"></i>
+              <div>
+                <p class="text-xl font-normal">Call Us</p>
+                <small class="text-sm text-gray-600"> <a href="tel:+919985362644">+919985362644</a></small>
+              </div>
+            </div>
+            <div class="timing flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+              <i class="fas fa-clock text-pink-500 text-3xl"></i>
+              <div>
+                <p class="text-xl font-normal">Our Timinig</p>
+                <small class="text-sm text-gray-600">Mon - Sun : 09:00 AM - 09:00 PM</small>
+              </div>
+            </div>
+          </div>
+          <div class="form flex-1 bg-gray-50 shadow-xl py-8 md:py-14 px-2 md:px-14 rounded-xl mx-4">
+            <form>
+              <input type="text" name="name" id="name" required class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2" placeholder="YOUR NAME">
+              <input type="tel" name="tel" id="tel" required placeholder="YOUR PHONE NUMBER" class="w-full my-4 border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2">
+              <textarea name="message" id="message" cols="30" rows="3" required placeholder="YOUR MESSAGE" class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2"></textarea>
+              <input type="submit" value="Submit"
+              class="block mx-auto mt-4 text-white cursor-pointer bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0347082942326!2d78.50869821529855!3d17.36206280810384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb992271889a3d%3A0xd8d09d58d63a3ad4!2sParas%20Catering%20Services!5e0!3m2!1sen!2sin!4v1638897961545!5m2!1sen!2sin" class="h-56 md:h-96 w-full max-w-7xl mx-auto rounded-xl" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </section>
+  </main>
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

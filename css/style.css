@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+.swiper {
+    width: 100vw;
+  }
+
+  .swiper-slide {
+    background-position: right bottom;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .swiper-slide {
+      background-position: right bottom;
+    }
+  }
