@@ -3,10 +3,10 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
-  // autoplay: {
-  //     delay: 1500,
-  //     disableOnInteraction: false,
-  //   },
+  autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -24,11 +24,13 @@ const navLinks = Array.from(navbar.children)
 
 navbar.addEventListener('click', (e) => {
   if (e.target.dataset.href) {
-    document.getElementById(e.target.dataset.href).scrollIntoView()
+    console.log(document.getElementById(e.target.dataset.href).querySelector('h1'));
+    document.getElementById(e.target.dataset.href).scrollIntoView({behavior: "smooth", block: "start"})
 
     if(window.matchMedia('(max-width: 768px)').matches) {
       navLinks.forEach(link => link.tagName === 'BUTTON' && link.classList.remove('bg-pink-600', 'text-white'))
       e.target.classList.add('bg-pink-600', 'text-white')
+      toggleNav()
     } else {
       navLinks.forEach(link => link.classList.remove('border-b-2', 'border-pink-600'))
       e.target.classList.add('border-b-2', 'border-pink-600')
@@ -39,11 +41,12 @@ navbar.addEventListener('click', (e) => {
 
 
 const hamBurger = document.querySelector(".fancy-burger");
-hamBurger.addEventListener("click", () => {
+hamBurger.addEventListener("click", toggleNav);
+
+function toggleNav() {
   hamBurger.querySelectorAll("span").forEach((span) => span.classList.toggle("open"));
   document.querySelectorAll('nav')[1].classList.toggle('h-96')
-});
-
+}
 
 const contactForm = document.getElementById('contact-form')
 
