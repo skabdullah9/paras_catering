@@ -26,56 +26,65 @@
         </svg>
         <span class="ml-3 text-xl font-serif">Paras Catering</span>
       </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
-        <a href="#hero"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Home</a>
-        <a href="#services"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Services</a>
-        <a
+      <nav class="desktop md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
+        <button data-href="hero"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Home</button>
+        <button data-href="services"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Services</button>
+        <button data-href="about"
           class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">About
-          Us</a>
-        <a
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Gallery</a>
-        <a
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Testimonial</a>
-        <a
+          Us</button>
+        <button data-href="gallery"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Gallery</button>
+        <button data-href="testimonial"
+          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Testimonial</button>
+        <button data-href="contact"
           class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Contact
-          Us</a>
+          Us</button>
       </nav>
       <a href="tel:+919985362644"
         class="text-white font-serif bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"> Call Now
         <i class="fas fa-phone-alt"></i>
       </a>
     </div>
-    <div class="mobile block md:hidden container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-600 rounded-full"
-          viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl font-serif">Paras Catering</span>
-      </a>
-      <nav class="hidden md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
-        <a href="#hero"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Home</a>
-        <a href="#services"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Services</a>
-        <a href="#about-us"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">About
-          Us</a>
-        <a href="#gallery"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Gallery</a>
-        <a href="#testimonial"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Testimonial</a>
-        <a href="#contact"
-          class="mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Contact
-          Us</a>
+    <div class="mobile block md:hidden container mx-auto p-2">
+      <div class="flex justify-between items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-pink-600 rounded-full"
+            viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl font-serif">Paras Catering</span>
+        </a>
+        <button class="fancy-burger navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="rectangle rectangle--top rectangle--small"></span>
+          <span class="rectangle rectangle--middle"></span>
+          <span class="rectangle rectangle--bottom rectangle--small"></span>
+        </button>
+
+      </div>
+      <nav class="mobile h-0 transition-all overflow-hidden block md:hidden md:ml-auto md:mr-auto text-xl text-center">
+        <button data-href="hero"
+          class="block w-full mt-3 bg-pink-600 text-white py-2 mr-5 border-b border-transparent hover:border-pink-600  transition-all cursor-pointer">Home</button>
+        <button data-href="services"
+          class="block w-full py-2 mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Services</button>
+        <button data-href="about"
+          class="block w-full py-2 mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">About
+          Us</button>
+        <button data-href="gallery"
+          class="block w-full py-2 mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Gallery</button>
+        <button data-href="testimonial"
+          class="block w-full py-2 mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Testimonial</button>
+        <button data-href="contact"
+          class="block mb-8 w-full py-2 mr-5 border-b-2 border-transparent hover:border-pink-600 focus:border-pink-600 transition-all cursor-pointer">Contact
+          Us</button>
+          <a href="tel:+919985362644"
+            class="text-white font-serif bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6">
+            Call Now <i class="fas fa-phone-alt"></i>
+        </a>
       </nav>
-      <a href="tel:+919985362644"
-        class="hidden text-white font-serif bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6">
-        Call Now <i class="fas fa-phone-alt"></i>
-      </a>
     </div>
   </header>
   <main class="divide">
@@ -86,7 +95,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div
-            class="swiper-slide text-center text-gray-100 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            class="swiper-slide text-center text-gray-100 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
             style="background-image: url('./assets/img/slide_1.webp');">
             <div class="">
               <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
@@ -97,7 +106,7 @@
             </div>
           </div>
           <div
-            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
             style="background-image: url('./assets/img/slide_2.webp');">
             <div>
               <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
@@ -108,7 +117,7 @@
             </div>
           </div>
           <div
-            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
             style="background-image: url('./assets/img/slide_3.webp');">
             <div>
               <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
@@ -119,7 +128,7 @@
             </div>
           </div>
           <div
-            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start py-32 md:py-64 md:pl-40"
+            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
             style="background-image: url('./assets/img/slide_4.webp');">
             <div>
               <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
@@ -137,9 +146,11 @@
 
     <section id="services" class="services my-12">
       <div class="container mx-auto">
-        <h1 class="text-3xl mb-10 text-center md:text-4xl uppercase ">services</h1>
+        <h1
+          class="underline-primary text-3xl mb-0 md:mb-10 text-center md:text-4xl uppercase font-serif font-normal text-gray-700">
+          services</h1>
         <div class="grid gap-y-8 justify-between grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="text-center">
+          <div class="text-center transition-shadow py-6 rounded-2xl hover:shadow-2xl">
             <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
                 src="./assets/img/services_1.jpg"
                 class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
@@ -151,7 +162,7 @@
               class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
                 class="fab fa-whatsapp"></i> Book Now</a>
           </div>
-          <div class="text-center">
+          <div class="text-center transition-shadow py-6 rounded-2xl hover:shadow-2xl">
             <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
                 src="./assets/img/services_2.webp"
                 class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
@@ -163,7 +174,7 @@
               class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
                 class="fab fa-whatsapp"></i> Book Now</a>
           </div>
-          <div class="text-center">
+          <div class="text-center transition-shadow py-6 rounded-2xl hover:shadow-2xl">
             <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
                 src="./assets/img/services_3.webp"
                 class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
@@ -175,7 +186,7 @@
               class="inline-block text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4"><i
                 class="fab fa-whatsapp"></i> Book Now</a>
           </div>
-          <div class="text-center">
+          <div class="text-center transition-shadow py-6 rounded-2xl hover:shadow-2xl">
             <div class="w-full h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
                 src="./assets/img/services_4.webp"
                 class="block h-full w-full object-cover transform hover:scale-125 transition-transform duration-500"
@@ -191,28 +202,36 @@
       </div>
     </section>
 
-    <section id="about-us" class="about-us my-18 md:my-28">
+    <section id="about" class="about-us my-18 md:my-28">
       <div class="container mx-auto">
         <div class="flex flex-col-reverse md:flex-row">
           <div class="flex-1 flex flex-col justify-center items-center text-center">
-            <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase ">about us</h1>
-            <p class="max-w-prose p-5">Filling every occasion with great food and service. We Paras Catering, situated at Saidabad, Hyderabad, Telangana are known for providing truly exquisite cuisine accompanied by dedicated service. We give our customers the option of choosing from a packaged catering menu or a customized menu. We deliver world class dining experience and to suit everyone's taste, we offer a wide range of cuisines with a menu boasting of many delicacies across global cuisines.</p>
+            <h1 class="text-3xl mt-4 mb-0 md:mb-10 text-center md:text-4xl uppercase underline-primary font-serif">about
+              us</h1>
+            <p class="max-w-prose p-5">Filling every occasion with great food and service. We Paras Catering, situated
+              at Saidabad, Hyderabad, Telangana are known for providing truly exquisite cuisine accompanied by dedicated
+              service. We give our customers the option of choosing from a packaged catering menu or a customized menu.
+              We deliver world class dining experience and to suit everyone's taste, we offer a wide range of cuisines
+              with a menu boasting of many delicacies across global cuisines.</p>
           </div>
-          <div class="flex-1 md:rounded-2xl max-h-96 overflow-hidden"><img src="./assets/img/about-us.jpg" class="h-full w-full object-cover object-center" alt=""></div>
+          <div class="flex-1 md:rounded-2xl max-h-96 overflow-hidden"><img src="./assets/img/about-us.jpg"
+              class="h-full w-full object-cover object-center" alt=""></div>
         </div>
       </div>
     </section>
 
     <section id="gallery" class="gallery">
-        <div class="container mx-auto">
-          <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">gallery</h1>
+      <div class="container mx-auto">
+        <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">gallery</h1>
 
-        </div>
+      </div>
     </section>
 
     <section id="contact" class="contact-us mb-16">
       <div class="container mx-auto">
-        <h1 class="text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">contact us</h1>
+        <h1
+          class="underline-primary font-serif tracking-wider text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">
+          contact us</h1>
         <div class="flex flex-col md:flex-row mx-auto max-w-7xl gap-6">
           <div class="info flex-1 bg-gray-50 shadow-xl pl-0 md:pl-28 py-8 md:py-14 rounded-xl mx-4">
             <div class="address flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
@@ -245,24 +264,33 @@
             </div>
           </div>
           <div class="form flex-1 bg-gray-50 shadow-xl py-8 md:py-14 px-2 md:px-14 rounded-xl mx-4">
-            <form>
-              <input type="text" name="name" id="name" required class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2" placeholder="YOUR NAME">
-              <input type="tel" name="tel" id="tel" required placeholder="YOUR PHONE NUMBER" class="w-full my-4 border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2">
-              <textarea name="message" id="message" cols="30" rows="3" required placeholder="YOUR MESSAGE" class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2"></textarea>
+            <form id="contact-form">
+              <input type="text" name="name" id="name" required
+                class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2"
+                placeholder="YOUR NAME">
+              <input type="tel" name="tel" id="tel" required placeholder="YOUR PHONE NUMBER"
+                class="w-full my-4 border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2">
+              <textarea name="message" id="message" cols="30" rows="3" required placeholder="YOUR MESSAGE"
+                class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2"></textarea>
               <input type="submit" value="Submit"
-              class="block mx-auto mt-4 text-white cursor-pointer bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4">
+                class="block mx-auto mt-4 text-white cursor-pointer bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4">
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="map">
-      <div class="container mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0347082942326!2d78.50869821529855!3d17.36206280810384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb992271889a3d%3A0xd8d09d58d63a3ad4!2sParas%20Catering%20Services!5e0!3m2!1sen!2sin!4v1638897961545!5m2!1sen!2sin" class="h-56 md:h-96 w-full max-w-7xl mx-auto rounded-xl" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    <section class="map mb-8">
+      <div class="container mx-auto"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0347082942326!2d78.50869821529855!3d17.36206280810384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb992271889a3d%3A0xd8d09d58d63a3ad4!2sParas%20Catering%20Services!5e0!3m2!1sen!2sin!4v1638897961545!5m2!1sen!2sin"
+          class="h-56 md:h-96 w-full max-w-7xl mx-auto rounded-xl" style="border:0;" allowfullscreen=""
+          loading="lazy"></iframe></div>
     </section>
   </main>
 
-
+  <footer class="bg-pink-700 p-2 ">
+    <p class="text-gray-100 text-center">© Copyrights 2021 - 2022. Paras Catering. All Rights Reserved.</p>
+  </footer>
   <script src="./js/script.js"></script>
 </body>
 

@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+:root {
+  --button-width: 30px;
+  --button-height: calc(var(--button-width) * 0.8);
+  --rectangle-height: calc(var(--button-width) * 0.1);
+  --rectangle-radius: calc(var(--button-width) * 0.04);
+  --translate: calc(var(--button-width) * 0.17);
+  --transition: 0.3s;
+}
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 150px;
 }
 .swiper {
     width: 100vw;
@@ -14,9 +24,70 @@ html {
     display: block;
     width: 100%;
   }
+  .underline-primary {
+    position: relative;
+    padding-bottom: 0.9rem;
 
+  }
+  .underline-primary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 80px;
+    background-color: #DB2777;
+  }
   @media (max-width: 768px) {
     .swiper-slide {
       background-position: right bottom;
     }
   }
+
+  .fancy-burger {
+    position: relative;
+    width: var(--button-width);
+    height: var(--button-height);
+    border: none;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+
+  }
+  .rectangle {
+    position: absolute;
+    height: var(--rectangle-height);
+    background: #DB2777;
+    border-radius: var(--rectangle-radius);
+    transition: transform var(--transition);
+  }
+  .rectangle--small {
+    width: calc(var(--button-width) / 2);
+  }
+  .rectangle--top {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+  }
+  .rectangle--top.open {
+    transform: translateX(var(--translate)) rotate(45deg);
+  }
+  .rectangle--middle {
+    top: 50%;
+    left: 0;
+    width: var(--button-width);
+    transform: translatey(-50%);
+  }
+  .rectangle--middle.open {
+    transform: translatey(-50%) rotate(-45deg);
+  }
+  .rectangle--bottom {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+  }
+  .rectangle--bottom.open {
+    transform: translateX(calc(-1 * var(--translate))) rotate(45deg);
+  }
+
