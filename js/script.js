@@ -14,6 +14,21 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+const swiper2 = new Swiper('.swiper-2', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  grabCursor: true,
+  autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
 let navbar = document.querySelector('nav')
 if(window.matchMedia('(max-width: 768px)').matches) {
   navbar = document.querySelectorAll('nav')[1]
