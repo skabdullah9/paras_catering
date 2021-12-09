@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Pacifico&display=swap');
 :root {
   --button-width: 30px;
   --button-height: calc(var(--button-width) * 0.8);
@@ -11,7 +11,10 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
-
+.logo-title {
+  font-family: 'Meow Script', cursive;
+font-family: 'Pacifico', cursive;
+}
 .swiper {
     width: 100vw;
   }

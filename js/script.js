@@ -39,7 +39,6 @@ const navLinks = Array.from(navbar.children)
 
 navbar.addEventListener('click', (e) => {
   if (e.target.dataset.href) {
-    console.log(document.getElementById(e.target.dataset.href).querySelector('h1'));
     document.getElementById(e.target.dataset.href).scrollIntoView({behavior: "smooth", block: "start"})
 
     if(window.matchMedia('(max-width: 768px)').matches) {
@@ -71,7 +70,6 @@ contactForm.addEventListener('submit', (e) => {
   const name = document.getElementById("name").value;
   const phone = document.getElementById("tel").value;
   const message = document.getElementById("message").value;
-
   var url = "https://wa.me/919985362644?text="
   + "Name: " + name + "%0a"
   + "Phone: " + phone + "%0a"
