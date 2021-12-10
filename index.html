@@ -22,12 +22,12 @@
 
 <body>
   <header class="sticky top-0 z-50 bg-white bg-opacity-95 text-gray-600 body-font shadow-2xl">
-    <div class="desktop hidden md:flex container mx-auto flex-wrap p-5 flex-col md:flex-row items-center">
+    <div class="desktop hidden md:flex container mx-auto flex-wrap py-2 lg:p-5 flex-col lg:flex-row items-center">
       <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
         <img src="./assets/img/logo.png" class="h-16 w-auto drop-shadow-2xl py-2 px-3 bg-gray-900 rounded-full" alt="">
         <span class="ml-3 text-3xl text-pink-600 font-thin logo-title">Paras Catering</span>
       </a>
-      <nav class="desktop md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center">
+      <nav class="desktop md:ml-auto md:mr-auto flex flex-wrap items-center text-lg justify-center my-4">
         <button data-href="hero"
           class="mr-5 border-b-2 border-transparent hover:border-pink-600 border-pink-600 transition-all cursor-pointer">Home</button>
         <button data-href="services"
@@ -102,17 +102,7 @@
                   class="fab fa-whatsapp"></i> Enquire Now</a>
             </div>
           </div>
-          <div
-            class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
-            style="background-image: url('./assets/img/slide_2.webp');">
-            <div>
-              <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
-              <p class="text-xl md:text-3xl text-gray-700 font-sans capitalize mt-2 mb-6">for all your events</p>
-              <a href="https://api.whatsapp.com/send?phone=+919492382001&text=Hello there!" target="_blank"
-                class="text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"><i
-                  class="fab fa-whatsapp"></i> Enquire Now</a>
-            </div>
-          </div>
+
           <div
             class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
             style="background-image: url('./assets/img/slide_3.webp');">
@@ -135,6 +125,17 @@
                   class="fab fa-whatsapp"></i> Enquire Now</a>
             </div>
           </div>
+          <div
+          class="swiper-slide text-center text-gray-900 flex items-center justify-center md:justify-start pt-8 pb-44 md:py-64 md:pl-40"
+          style="background-image: url('./assets/img/slide_2.webp');">
+          <div>
+            <h1 class="text-2xl md:text-5xl uppercase font-mono">catering services</h1>
+            <p class="text-xl md:text-3xl text-gray-700 font-sans capitalize mt-2 mb-6">for all your events</p>
+            <a href="https://api.whatsapp.com/send?phone=+919492382001&text=Hello there!" target="_blank"
+              class="text-white bg-pink-600 hover:bg-pink-700 rounded-3xl text-md md:text-xl py-2 px-6"><i
+                class="fab fa-whatsapp"></i> Enquire Now</a>
+          </div>
+        </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -146,7 +147,7 @@
         <h1
           class="underline-primary text-3xl mb-0 md:mb-10 text-center md:text-4xl uppercase font-serif font-normal text-gray-700">
           services</h1>
-        <div class="grid justify-between grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="grid justify-between gap-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <div class="text-center transition-shadow py-6 rounded-2xl hover:shadow-2xl">
             <div class="w-full h-44 md:h-56 md:w-60 overflow-hidden md:rounded-2xl mx-auto"><img
                 src="./assets/img/services_1.jpg" alt="wedding catering service hyderabad"
@@ -230,10 +231,10 @@
         style="background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./assets/img/testimonial.jpg');background-size: cover;background-position: center;background-attachment: fixed;">
         <h1 class="text-3xl mt-4 mb-6 md:mb-10 text-center md:text-4xl uppercase underline-primary font-serif">
           testimonial</h1>
-        <div class="quote absolute top-1/3 md:top-1/2 transform -translate-y-1/2 -translate-x-full left-12 md:left-1/4">
-          <i class="fas fa-quote-left text-4xl md:text-7xl text-pink-600"></i></div>
-        <div class="quote absolute bottom-1/4 md:top-1/2 transform translate-x-full right-12 md:right-1/4"><i
-            class="fas fa-quote-right text-4xl md:text-7xl text-pink-600"></i></div>
+        <div class="quote absolute top-1/3 lg:top-1/2 transform -translate-y-3/4 -translate-x-full left-12 lg:left-1/4">
+          <i class="fas fa-quote-left text-4xl lg:text-7xl text-pink-600"></i></div>
+        <div class="quote absolute bottom-1/4 lg:top-1/2 transform translate-x-full translate-y-1/2 right-12 lg:right-1/4"><i
+            class="fas fa-quote-right text-4xl lg:text-7xl text-pink-600"></i></div>
         <!-- Slider main container -->
         <div class="swiper-2">
           <!-- Additional required wrapper -->
@@ -281,23 +282,23 @@
         <h1
           class="underline-primary font-serif tracking-wider text-3xl mb-2 md:mb-10 text-center md:text-4xl uppercase">
           contact us</h1>
-        <div class="flex flex-col md:flex-row mx-auto max-w-7xl gap-6">
-          <div class="info flex-1 bg-gray-50 shadow-xl pl-0 md:pl-28 py-8 md:py-14 rounded-xl mx-4">
-            <div class="address flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+        <div class="flex flex-col lg:flex-row mx-auto max-w-7xl gap-6">
+          <div class="info flex-1 bg-gray-50 shadow-xl md:pl-5 xl:pl-28 py-8 lg:py-14 rounded-xl mx-4">
+            <div class="address flex flex-col lg:flex-row text-center lg:text-left items-center gap-4 lg:gap-10 mb-6">
               <i class="fas fa-map-marker-alt text-pink-500 text-3xl pl-1"></i>
               <div>
                 <p class="text-xl font-normal">Our Office Address</p>
                 <small class="text-sm text-gray-600">Saidabad, Hyderabad, Telangana. 500059</small>
               </div>
             </div>
-            <div class="email flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+            <div class="email flex flex-col lg:flex-row text-center lg:text-left items-center gap-4 lg:gap-10 mb-6">
               <i class="fas fa-envelope text-pink-500 text-3xl"></i>
               <div>
                 <p class="text-xl font-normal">General Enquiries</p>
                 <small class="text-sm text-gray-600"> <a href="mailto:"></a> contact@mysites.com</small>
               </div>
             </div>
-            <div class="call flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+            <div class="call flex flex-col lg:flex-row text-center lg:text-left items-center gap-4 lg:gap-10 mb-6">
               <i class="fas fa-phone-alt text-pink-500 text-3xl transform rotate-90"></i>
               <div>
                 <p class="text-xl font-normal">Call Us</p>
@@ -307,7 +308,7 @@
                   ( Mohn Mohsin )</small>
               </div>
             </div>
-            <div class="timing flex flex-col md:flex-row text-center md:text-left items-center gap-4 md:gap-10 mb-6">
+            <div class="timing flex flex-col lg:flex-row text-center lg:text-left items-center gap-4 lg:gap-10 mb-6">
               <i class="fas fa-clock text-pink-500 text-3xl"></i>
               <div>
                 <p class="text-xl font-normal">Our Timinig</p>
@@ -315,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="form flex-1 bg-gray-50 shadow-xl py-8 md:py-14 px-2 md:px-14 rounded-xl mx-4">
+          <div class="form flex-1 bg-gray-50 shadow-xl py-8 lg:py-14 px-2 lg:px-14 rounded-xl mx-4">
             <form id="contact-form">
               <input type="text" name="name" id="name" required
                 class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2"
@@ -325,7 +326,7 @@
               <textarea name="message" id="message" cols="30" rows="3" required placeholder="YOUR MESSAGE"
                 class="w-full border border-gray-300 bg-transparent rounded-lg focus:outline-none focus:border-pink-600 text-lg px-4 py-2"></textarea>
               <input type="submit" value="Submit"
-                class="block mx-auto mt-4 text-white cursor-pointer bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm md:text-md py-2 px-4">
+                class="block mx-auto mt-4 text-white cursor-pointer bg-pink-600 hover:bg-pink-700 rounded-3xl text-sm lg:text-md py-2 px-4">
             </form>
           </div>
         </div>

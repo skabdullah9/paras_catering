@@ -3,10 +3,10 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   grabCursor: true,
-  autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
+  // autoplay: {
+  //     delay: 1500,
+  //     disableOnInteraction: false,
+  //   },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
